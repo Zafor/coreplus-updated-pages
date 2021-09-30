@@ -125,20 +125,33 @@ body {
 /* End of Invalid Session Page */
 
 /* Email Validation Success */
+.main-layout {
+  display: flex;
+}
 
-.left-side-desktop {
+.es-left-side-desktop {
   width: 50vw;
 }
 
-.right-side-desktop {
+.es-right-side-desktop {
+  background-image: url("/images/coreplus-grid.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
   width: 50vw;
+  background-color: #f98731;
+  height: 100vh;
+}
+.es-right-content {
+  height: 100vh;
+  padding: 50px;
 }
 
 .coreplus-logo {
-  width: 30%;
+  width: 40%;
   margin: auto;
 }
 .coreplus-logo img {
+  margin-top: 5vh;
   width: 100%;
   height: 100%;
 }
@@ -150,11 +163,19 @@ body {
 
 .email-success span {
   color: #f98731;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .email-success-message {
   background-color: #61c5ba;
+  margin: auto;
+  width: 50%;
+  border-radius: 5px;
+}
+.email-success-message p {
+  padding: 10px;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .envelope {
@@ -172,4 +193,112 @@ body {
 .back-to-login a {
   text-decoration: underline;
   color: #676767;
+  font-size: 2rem;
+}
+
+.need-help-email-success a {
+  color: #f98731;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.header-email-success {
+  margin-top: 20px;
+  margin-bottom: 5vh;
+  width: 50vw;
+}
+.header-email-success a {
+  text-decoration: underline;
+  color: #7f7f7f;
+  font-size: 1.8rem;
+}
+
+.copyright-email-success {
+  color: #7f7f7f;
+  margin-top: 5vh;
+}
+.copyright-email-success p {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1300px) {
+  .es-right-side-desktop {
+    display: none;
+  }
+  .es-left-side-desktop {
+    width: 100vw;
+  }
+  .header-email-success {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1299px) {
+  .coreplus-logo {
+    width: 20%;
+  }
+  .email-success span {
+    font-size: 2rem;
+  }
+  .envelope {
+    width: 20%;
+  }
+  .copyright-email-success p {
+    font-size: 1.2rem;
+  }
+  .header-email-success a {
+    font-size: 1.2rem;
+  }
+  .need-help-email-success a {
+    font-size: 1.5rem;
+  }
+  .back-to-login a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .coreplus-logo {
+    width: 30%;
+  }
+  .envelope {
+    width: 20%;
+  }
+}
+@media (max-width: 650px) {
+  .email-success-message {
+    width: 70%;
+  }
+  .envelope {
+    width: 25%;
+  }
+}
+
+@media (max-width: 425px) {
+  .coreplus-logo {
+    width: 40%;
+  }
+  .email-success-message p {
+    font-size: 1.5rem;
+  }
+  .envelope {
+    width: 35%;
+  }
+  .copyright-email-success p {
+    font-size: 1.2rem;
+  }
+  .header-email-success a {
+    font-size: 1.2rem;
+  }
+}
+
+.es-right-image {
+  margin-top: 10vh;
+}
+
+.es-right-header {
+  margin: 40px 0px;
+}
+.es-right-header span {
+  font-size: 4rem;
+  color: #fff;
 }
