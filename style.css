@@ -9,7 +9,6 @@ body {
 .header {
   margin-top: 20px;
   margin-bottom: 5vh;
-  width: 50vw;
 }
 .header a {
   text-decoration: underline;
@@ -22,7 +21,7 @@ body {
   margin-top: -50px;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 425px) {
   .copyright {
     margin-top: 40px;
   }
@@ -70,6 +69,11 @@ body {
 /* End of Error Page */
 
 /* Invalid Session Page */
+
+.invalid-session-page {
+  background-image: url("/images/health-grid-bd-is.svg");
+  background-position: center center;
+}
 .session-space {
   margin-top: 10vh;
 }
@@ -133,12 +137,15 @@ body {
   width: 50vw;
 }
 
+.es-left-side-content {
+  height: 100vh;
+}
+
 .es-right-side-desktop {
-  background-image: url("/images/coreplus-grid.svg");
-  background-position: center center;
+  background-image: url("/images/ev-background.svg");
+  background-position: cover;
   background-repeat: no-repeat;
   width: 50vw;
-  background-color: #f98731;
   height: 100vh;
 }
 .es-right-content {
@@ -163,7 +170,7 @@ body {
 
 .email-success span {
   color: #f98731;
-  font-size: 3rem;
+  font-size: 20px;
 }
 
 .email-success-message {
@@ -175,11 +182,11 @@ body {
 .email-success-message p {
   padding: 10px;
   color: #fff;
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 .envelope {
-  width: 30%;
+  width: 150px;
   margin: auto;
 }
 
@@ -193,13 +200,13 @@ body {
 .back-to-login a {
   text-decoration: underline;
   color: #676767;
-  font-size: 2rem;
+  font-size: 14px;
 }
 
 .need-help-email-success a {
   color: #f98731;
   text-decoration: underline;
-  font-size: 2rem;
+  font-size: 18px;
 }
 .header-email-success {
   margin-top: 20px;
@@ -209,15 +216,16 @@ body {
 .header-email-success a {
   text-decoration: underline;
   color: #7f7f7f;
-  font-size: 1.8rem;
+  font-size: 14px;
 }
 
 .copyright-email-success {
   color: #7f7f7f;
-  margin-top: 5vh;
+  margin-top: -10vh;
+  height: 10vh;
 }
 .copyright-email-success p {
-  font-size: 1.8rem;
+  font-size: 14px;
 }
 
 @media (max-width: 1300px) {
@@ -302,3 +310,71 @@ body {
   font-size: 4rem;
   color: #fff;
 }
+
+.es-right-side-text span {
+  color: #fff;
+}
+.es-right-side-link {
+  margin-top: 30px;
+}
+.es-right-side-link a {
+  color: #f98731;
+  background-color: #fff;
+  padding: 10px 60px;
+  border-radius: 5px;
+}
+
+/* End of Email Validation Success */
+
+/* Email Validation Fail */
+
+.ex-trial-message {
+  margin: 30px 0px;
+}
+.ex-trial-message p {
+  color: #676767;
+}
+.ex-trial-message a {
+  text-decoration: underline;
+  color: #f98731;
+}
+
+.email-expired-message {
+  background-color: #e5028b;
+  margin: auto;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.email-expired-message p {
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.email-expired {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.email-expired span {
+  color: #f98731;
+  font-size: 26px;
+}
+
+@media (max-width: 650px) {
+  .email-expired-message {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .coreplus-logo {
+    width: 40%;
+  }
+  .email-expired-message p {
+    font-size: 1.5rem;
+  }
+}
+
+/* End of Email Validation Fail */
